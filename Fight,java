@@ -1,0 +1,13 @@
+public class Fight{
+public static void main(String [] args){
+    Superhero s1=new Superhero("Storm"); //Creating a Superhero called Storm
+    Superhero s2=new Superhero("Quicksilver",57); //Creating a Superhero called Quicksilver, with a strength of 57
+    Superhero winner=new Superhero("Winner"); //Creating an instance of the winning Superhero 
+    winner=s1.fight(s2); //Strom fights Quicksilver, and the result is the winning Superhero
+    winner.print(); //Calling the method which prints the Superhero's name on the terminal
+    s1.powerUp(100); //Giving Storm a powerUp of 100
+    winner=s1.fight(s2); //Making Storm fight Quicksilver again
+    winner.print(); //Printing the winning Superhero's name on the terminal
+    
+}
+}
